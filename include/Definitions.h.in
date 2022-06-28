@@ -1,0 +1,3 @@
+// General project definitions for cpp-teacher
+#define dexter_VERSION_MAJOR @dexter_VERSION_MAJOR@
+#define dexter_VERSION_MINOR @dexter_VERSION_MINOR@
