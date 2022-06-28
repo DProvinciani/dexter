@@ -18,6 +18,13 @@ jobs:
     runs-on: windows-2019 # Required for Visual Studio 16 2019
 
     steps:
+    - name: Install Conan
+      id: conan
+      uses: turtlebrowser/get-conan@main
+
+    - name: Conan version
+      run: echo "${{ steps.conan.outputs.version }}"
+      
     - uses: actions/checkout@v3
 
     - name: Configure CMake
