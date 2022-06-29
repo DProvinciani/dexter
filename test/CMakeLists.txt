@@ -49,3 +49,5 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 )
 # Setup generation of debug symbols for Release builds
 add_link_options($<$<CONFIG:Release>:/DEBUG$<SEMICOLON>/OPT:REF$<SEMICOLON>/OPT:ICF>)
+
+add_test(${PROJECT_NAME} ${CMAKE_BINARY_DIR}/bin/${PROJECT_NAME})

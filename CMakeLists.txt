@@ -12,6 +12,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
+include(CTest)
+enable_testing()
+
 # Collecting headers and sources
 file(GLOB_RECURSE ${PROJECT_NAME}_INCLUDES "include/*.h")
 file(GLOB_RECURSE ${PROJECT_NAME}_SOURCES_STRING "src/string/*.cpp")
